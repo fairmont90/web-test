@@ -6,66 +6,17 @@
 -->
 <html>
 	<head>
-		<title>Oxford House</title>
+		<title>Landed by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<link real="stylesheet" href="style.css">
 	</head>
 	<body class="landing">
-
-
 		<div id="page-wrapper">
-			<video src="showreel.mp4" autoplay ></video>
 
-			<!-- Header -->
-				<!--<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Layouts</a>
-								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button special">Sign Up</a></li>
-						</ul>
-					</nav>
-				</header>-->
-
-
-			<!-- Banner -->
-
-				<section>
-					<header>We are Oxford House, a creative production
-						agency for film and photography
-					</header>
-					<ul>
-						<li><a href="http://google.com">Films</a> </li>
-						<li><a href="http://google.com">About</a> </li>
-						<li><a href="http://google.com">Contact</a></li>
-					</ul>
-				</section>
-
-
-			
 			<section id="verticalText" >
 				<ul class="hr">
 					<li><a href="http://google.com">Story</a></li>
@@ -73,6 +24,31 @@
 					<li><a href="http://google.com">Clients</a></li>
 				</ul>
 			</section>
+			
+			<section id="two" class="spotlight style2 left">
+				<video src="showreel.mp4" autoplay></video>
+				<div id="Sidebar" class="content hidden">
+					<header>
+						We are Oxford House, a creative production agency for film and photography
+					</header>
+					<ul class="actions">
+						<li><a href="#">Films</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<a href="#three" class="goto-next scrolly">Next</a>
+			</section>
+
+			<!--<section>
+				<ul class>
+					<li><a href="http://google.com">Video</a></li>
+					<li><a href="http://google.com">About</a></li>
+					<li><a href="http://google.com">Contacts</a></li>
+				</ul>
+			</section>-->
+
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -83,6 +59,18 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+				$("body").click(function(e){
+					var sidebar = document.getElementById('Sidebar');
+					sidebar.classList.remove('hidden');
+					sidebar.classList.add("animation-sidebar");
+					/*var parent = sidebar.parentNode;
+					sidebar.classList.remove('hidden');
+					var replace = sidebar.cloneNode();
+
+					parent.replaceChild(replace, sidebar);*/
+				});
+			</script>
 
 	</body>
 </html>

@@ -2496,7 +2496,8 @@
 			width: 100%;
 		}
 
-			.image.fit img {
+			.image.fit img,
+			.image.fit video{
 				width: 100%;
 			}
 
@@ -3998,7 +3999,6 @@
 						padding: 0;
 					}
 
-
 	}
 body{ cursor: url(images/mouse_csmzet.png), pointer;}
 
@@ -4015,6 +4015,146 @@ body{ cursor: url(images/mouse_csmzet.png), pointer;}
 	right: 10px;
 	top: calc(100vh - 248px);
 
+}
+ul.hr {
+	margin: 0;
+	padding: 2px;
+}
+
+ul.hr li{
+	display: inline; /* Отображать как строчный элемент */
+	margin-right: 5px; /* Отступ слева */
+
+	padding: 1px; /* Поля вокруг текста */
+}
+
+.sidebar {
+	background-color: white;
+	color: black;
+	width: 40em;
+}
+
+.spotlight.style2 .content {
+	border-color: black;
+}
+
+.spotlight .content {
+	background: white;
+	color: black;
+	border: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.animation-sidebar {
+	-webkit-animation: show-sidebar 2s ease;
+	-moz-animation:    show-sidebar 2s ease;
+	animation:         show-sidebar 2s ease;
+}
+
+@keyframes show-sidebar {
+	0% {
+		width: 0px;
+	 	color: transparent
+	}
+	90% {
+		width: 28em;
+		color: transparent;
+	}
+	100% {
+		width: 28em;
+		color: black;
+	}
+}
+
+video {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* The following will size the video to fit the full container. Not necessary, just nice.*/
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+.sidebar {
+	background-color: white;
+	color: black;
+	width: 40em;
+}
+
+.spotlight.style2 .content {
+	border-color: black;
+}
+
+.spotlight .content {
+	background: white;
+	color: black;
+	border: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.animation-sidebar {
+	-webkit-animation: show-sidebar 2s ease;
+	-moz-animation:    show-sidebar 2s ease;
+	animation:         show-sidebar 2s ease;
+}
+
+@keyframes show-sidebar {
+	0% {
+		width: 0px;
+	 	color: transparent;
+	}
+	90% {
+		width: 28em;
+		color: transparent;
+	}
+	100% {
+		width: 28em;
+		color: black;
+	}
+}
+
+@keyframes show-sidebar-links {
+
+}
+
+video {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* The following will size the video to fit the full container. Not necessary, just nice.*/
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+
+#verticalText {
+	writing-mode: lr-tb;
+	-o-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	width: 300px;
+	height: 200px;
+	position: fixed;
+	right: 10px;
+	top: calc(100vh - 248px);
+	z-index: 100;
 }
 ul.hr {
 	margin: 0;
